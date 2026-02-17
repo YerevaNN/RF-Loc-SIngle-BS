@@ -1,0 +1,8 @@
+from src.datamodules.datasets.wair_d import WAIRDDataset
+from src.datamodules.datasets.wair_d_full_all_links import WAIRDDatasetFullAllLinks
+from src.datamodules.datasets.wair_d_full_single_link import WAIRDDatasetFullSingleLink
+from src.datamodules.datasets.wair_d_images import WAIRDDatasetImages
+from src.datamodules.datasets.wair_d_images_sequence import WAIRDDatasetImagesSequence
+
+from src.datamodules.datasets.wair_d_path_loss import WAIRDDatasetPathLoss
+from src.datamodules.datasets.wair_d_sequence import WAIRDDatasetSequence

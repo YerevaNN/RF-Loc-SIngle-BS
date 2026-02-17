@@ -1,0 +1,27 @@
+# @package _global_
+name: prepare_data
+seed: 0
+print_config: True
+ignore_warnings: True
+
+raw_data_dir: ${oc.env:RAW_DATA_DIR}/scenario_1
+prepared_data_dir: ${oc.env:PREPARED_DATA_DIR}
+noise_dir: ${oc.env:NOISE_DIR}${aod_noise}_${aoa_noise}/scenario_1
+
+sequence: False
+num_shortest_paths: 5
+image_size: 224
+center_aod: False
+add_noise: False
+noise: False
+aod_noise: 8.5
+aoa_noise: 10.5
+
+n_processes: 8
+items_per_step: 100
+
+hydra:
+  run:
+    dir: ${oc.env:OUTPUT_DIR}/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: True

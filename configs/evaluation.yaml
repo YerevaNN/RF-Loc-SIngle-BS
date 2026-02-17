@@ -1,0 +1,21 @@
+# @package _global_
+name: evaluation
+seed: 0
+print_config: True
+ignore_warnings: True
+
+
+prediction_path: ${oc.env:PREDICTIONS_PATH}/test/2024-05-11_18-36-57
+task: localization
+allowable_errors: [ 1, 5, 10, 20, 30, 40, 50 ]
+split: test
+
+defaults:
+  - datamodule: wair_d_images
+  - _self_
+
+hydra:
+  run:
+    dir: ${oc.env:OUTPUT_DIR}/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: True

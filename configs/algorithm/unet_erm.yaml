@@ -1,0 +1,16 @@
+_target_: src.algorithms.UNetERM
+
+name: unet_erm
+allowable_errors: [ 1, 5, 10, 30, 50 ]
+use_dice: False
+
+groups_count: 2
+
+compiled:
+  _target_: src.utils.CompileParams
+  fullgraph: False
+  dynamic: null
+  backend: inductor
+  mode: null
+  options: null
+  disable: True

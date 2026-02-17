@@ -1,0 +1,12 @@
+_target_: src.datamodules.WAIRDPathLossDatamodule
+
+data_path: ${oc.env:IMAGE_DATA_PATH}
+scenario: scenario_1
+batch_size: 8
+num_workers: 6
+output_kernel_size: 3
+min_path_loss: 80
+max_path_loss: 180
+img_size: 224
+eps_image: 2
+path_response_ghz: "28GHz"

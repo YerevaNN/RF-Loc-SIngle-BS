@@ -1,0 +1,15 @@
+_target_: src.algorithms.TransformerERM
+
+name: transformer_erm
+allowable_errors: [ 1, 5, 10, 30, 50 ]
+
+groups_count: 2
+
+compiled:
+  _target_: src.utils.CompileParams
+  fullgraph: False
+  dynamic: null
+  backend: inductor
+  mode: null
+  options: null
+  disable: True
