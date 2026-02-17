@@ -1,5 +1,7 @@
 # RF-Loc-Single-BS
 
+Code for the paper: [Deep learning with synthetic data for wireless NLOS positioning with a single base station](https://doi.org/10.1016/j.adhoc.2024.103696)
+
 RF-based localization using a single base station on the [WAIR-D dataset](https://www.mobileai-dataset.com/html/default/yingwen/DateSet/1590994253188792322.html?index=1).
 
 ## Setup
